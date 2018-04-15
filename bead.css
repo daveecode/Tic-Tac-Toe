@@ -1,0 +1,68 @@
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #887157;
+}
+
+p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: black;
+    font-weight: bold;
+}
+
+/* button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: table;
+    font-size: 16px;
+    
+} */
+
+.button {
+    background-color: #4CAF50; 
+    border: none; 
+    line-height: 225px;
+    color: white; 
+    padding: 10px 24px; 
+    cursor: pointer; 
+    width: 50%; 
+    display: table;
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+body {
+    background-color: #4CAF50;
+}
+
+.mdc-button {
+
+  font-weight: normal;
+  font-style: normal;
+  background-color: brown;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: rtl;
+  cursor: pointer;
+
+}
+
