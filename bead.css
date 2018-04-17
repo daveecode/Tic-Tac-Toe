@@ -1,0 +1,98 @@
+html, body {
+    background-color: rgba(126, 18, 18, 0.7);
+    text-align: center;
+    color: black;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+}
+
+body, main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+main {
+    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+header {
+    background-color: #887157;;
+    width: 100vw;
+    height: 64px;
+}
+
+section, footer {
+    width: 100vw;
+    max-width: calc(100vh - 264px);
+}
+
+section {
+    height: calc(100vh - 264px);
+    max-height: 100vw;
+    background-color: #887157;;
+}
+
+footer {
+    background: rgba(134, 31, 31, 0.7);
+    height: 200px;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-color: orange;
+    border-bottom: 10px solid orange;
+}
+
+.item {
+    border: 10px solid orange;
+    height: 33%;
+    width: 33%;
+    font-size: 100px;
+    color: black;
+}
+
+.item:active {
+    background-color: blue;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: rgb(70, 50, 0);
+}
+
+section {
+    width: 100vw;
+  max-width: calc(100vh - 264px);
+}
+
+#container {
+    touch-action: none;
+}
+
+header div {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#message {
+    padding-bottom: 40px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: snow;
+}
