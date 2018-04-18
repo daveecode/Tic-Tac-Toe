@@ -45,6 +45,7 @@ section {
 footer {
     background: rgba(134, 31, 31, 0.7);
     height: 200px;
+    font-size: 20px;
 }
 
 table {
@@ -52,11 +53,11 @@ table {
     height: 100%;
     border-collapse: collapse;
     border-color: orange;
-    border-bottom: 10px solid orange;
+    border-bottom: 10px solid white;
 }
 
 .item {
-    border: 10px solid orange;
+    border: 10px solid white;
     height: 33%;
     width: 33%;
     font-size: 100px;
@@ -89,10 +90,26 @@ header div {
 }
 
 #message {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 button:hover {
     cursor: pointer;
     background-color: snow;
+}
+
+.mdc-button {
+    direction: rtl;
+    display: inline-block;
+}
+
+#actual {
+    padding-top: 15px;
+    font-size: 60px;
+}
+
+.item2 {
+    text-align: center;
+    font-size: 80px;
 }
