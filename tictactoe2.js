@@ -77,6 +77,9 @@ function play() {
                     if(steps == 3) {
                         comp_third();
                     }
+                    if(steps == 4) {
+                        comp_fourth();
+                    }
                 }
             }
 
@@ -267,9 +270,33 @@ function play() {
     function comp_third() {
         //1.sor
         if(pattern[0] == pattern[1] & pattern[0] == player.id) {
+            if(pattern[2] == computer.id) {
+                if(pattern[3] == 0) {
+                    cells[3].innerText = computer.sign;
+                    pattern[3] = computer.id;
+                    return;
+                }
+                else if(pattern[5] == 0) {
+                    cells[5].innerText = computer.sign;
+                    pattern[5] = computer.id;
+                    return;
+                }
+                else if(pattern[8] == 0){
+                    cells[8].innerText = computer.sign;
+                    pattern[8] = computer.id;
+                    return;
+                }
+                else {
+                    cells[7].innerText = computer.sign;
+                    pattern[7] = computer.id;
+                    return;
+                }
+            }
+            else {
             cells[2].innerText = computer.sign;
             pattern[2] = computer.id;
             return;
+            }
         }
         if(pattern[1] == pattern[2] & pattern[1] == player.id) {
             if(pattern[0] == computer.id) {
@@ -278,9 +305,27 @@ function play() {
                     pattern[6] = computer.id;
                     return;
                 }
+                else if(pattern[7] == computer.id){
+                    if(pattern[3] == 0) {
+                        cells[3].innerText = computer.sign;
+                        pattern[3] = computer.id;
+                        return;
+                    }
+                    else {
+                        cells[8].innerText = computer.sign;
+                        pattern[8] = computer.id;
+                        return;
+                    }
+                    
+                }
+                else if(pattern[3] == 0) {
+                    cells[3].innerText = computer.sign;
+                    pattern[3] = computer.id;
+                    return;
+                }
                 else {
-                    cells[8].innerText = computer.sign;
-                    pattern[8] = computer.id;
+                    cells[7].innerText = computer.sign;
+                    pattern[7] = computer.id;
                     return;
                 }
             }
@@ -298,9 +343,14 @@ function play() {
                     pattern[7] = computer.id;
                     return;
                 }
+                else if(pattern[6] == 0){
+                    cells[6].innerText = computer.sign;
+                    pattern[6] = computer.id;
+                    return;
+                }
                 else {
-                    cells[5].innerText = computer.sign;
-                    pattern[5] = computer.id;
+                    cells[8].innerText = computer.sign;
+                    pattern[8] = computer.id;
                     return;
                 }
             }
@@ -318,10 +368,32 @@ function play() {
                     pattern[2] = computer.id;
                     return;
                 }
-                else {
-                    cells[8].innerText = computer.sign;
-                    pattern[8] = computer.id;
+                else if(pattern[1] == 0) {
+                    cells[1].innerText = computer.sign;
+                    pattern[1] = computer.id;
                     return;
+                }
+                else if(pattern[6] == 0) {
+                    cells[6].innerText = computer.sign;
+                    pattern[6] = computer.id;
+                    return;
+                }
+                else {
+                    if(pattern[1] == 0) {
+                        cells[1].innerText = computer.sign;
+                        pattern[1] = computer.id;
+                        return;
+                    }
+                    else if(pattern[8] == 0) {
+                        cells[8].innerText = computer.sign;
+                        pattern[8] = computer.id;
+                        return;
+                    }
+                    else {
+                        cells[7].innerText = computer.sign;
+                        pattern[7] = computer.id;
+                        return;
+                    }
                 }
             }
             else {
@@ -331,9 +403,39 @@ function play() {
             }
         }
         if(pattern[4] == pattern[5] & pattern[4] == player.id) {
+            if(pattern[3] == computer.id) {
+                if(pattern[6] == 0) {
+                    cells[6].innerText = computer.sign;
+                    pattern[6] = computer.id;
+                    return;
+                }
+                
+                else if(pattern[2] == 0) {
+                    cells[2].innerText = computer.sign;
+                    pattern[2] = computer.id;
+                    return;
+                }
+                else if(pattern[1] == 0) {
+                    cells[1].innerText = computer.sign;
+                    pattern[1] = computer.id;
+                    return;
+                }
+                else if(pattern[6] == 0){
+                    cells[6].innerText = computer.sign;
+                    pattern[6] = computer.id;
+                    return;
+                }
+                else {
+                    cells[7].innerText = computer.sign;
+                    pattern[7] = computer.id;
+                    return;
+                }
+            }
+            else {
             cells[3].innerText = computer.sign;
             pattern[3] = computer.id;
             return;
+            }
         }
         if(pattern[3] == pattern[5] & pattern[3] == player.id) {
             if(pattern[7] == 0) {
@@ -341,22 +443,85 @@ function play() {
                 pattern[7] = computer.id;
                 return;
             }
-            else {
+            else if(pattern[2] == 0) {
+                cells[2].innerText = computer.sign;
+                pattern[2] = computer.id;
+                return;
+            }
+            else if(pattern[8] == 0) {
                 cells[8].innerText = computer.sign;
                 pattern[8] = computer.id;
+                return;
+            }
+            else if(pattern[1] == 0) {
+                cells[1].innerText = computer.sign;
+                pattern[1] = computer.id;
+                return;
+            }
+            else {
+                cells[0].innerText = computer.sign;
+                pattern[0] = computer.id;
                 return;
             }
         }
         //3.sor
         if(pattern[6] == pattern[7] & pattern[6] == player.id) {
+            if(pattern[8] == computer.id) {
+                if(pattern[3] == 0) {
+                    cells[3].innerText = computer.sign;
+                    pattern[3] = computer.id;
+                    return;
+                }
+                else if(pattern[5] == 0) {
+                    cells[5].innerText = computer.sign;
+                    pattern[5] = computer.id;
+                    return;
+                }
+                else if(pattern[0] == 0) {
+                    cells[0].innerText = computer.sign;
+                    pattern[0] = computer.id;
+                    return;
+                }
+                else if(pattern[1] == 0){
+                    cells[1].innerText = computer.sign;
+                    pattern[1] = computer.id;
+                    return;
+                }
+                else {
+                    cells[2].innerText = computer.sign;
+                    pattern[2] = computer.id;
+                    return;
+                }
+            }
+            else {
             cells[8].innerText = computer.sign;
             pattern[8] = computer.id;
             return;
+            }
         }
         if(pattern[7] == pattern[8] & pattern[7] == player.id) {
+            if(pattern[6] == computer.id) {
+                if(pattern[5] == 0) {
+                    cells[5].innerText = computer.sign;
+                    pattern[5] = computer.id;
+                    return;
+                }
+                else if(pattern[1] == 0) {
+                    cells[1].innerText = computer.sign;
+                    pattern[1] = computer.id;
+                    return;
+                }
+                else {
+                    cells[3].innerText = computer.sign;
+                    pattern[3] = computer.id;
+                    return;
+                }
+            }
+            else {
             cells[6].innerText = computer.sign;
             pattern[6] = computer.id;
             return;
+            }
         }
         if(pattern[6] == pattern[8] & pattern[6] == player.id) {
             if(pattern[7] == computer.id) {
@@ -365,9 +530,19 @@ function play() {
                     pattern[1] = computer.id;
                     return;
                 }
-                else {
+                else if(pattern[5] == 0) {
                     cells[5].innerText = computer.sign;
                     pattern[5] = computer.id;
+                    return;
+                }
+                else if(pattern[3] == 0) {
+                    cells[3].innerText = computer.sign;
+                    pattern[3] = computer.id;
+                    return;
+                }
+                else {
+                    cells[1].innerText = computer.sign;
+                    pattern[1] = computer.id;
                     return;
                 }
             }
@@ -384,9 +559,16 @@ function play() {
             return;
         }
         if(pattern[3] == pattern[6] & pattern[3] == player.id) {
+            if(pattern[0] == 0) {
             cells[0].innerText = computer.sign;
             pattern[0] = computer.id;
             return;
+            } 
+            else {
+                cells[8].innerText = computer.sign;
+                pattern[8] = computer.id;
+                return;
+            }
         }
         if(pattern[0] == pattern[6] & pattern[0] == player.id) {
             if(pattern[3] == computer.id) {
@@ -409,14 +591,48 @@ function play() {
         }
         //2.oszlop
         if(pattern[1] == pattern[4] & pattern[1] == player.id) {
+            if(pattern[7] == computer.id) {
+                if(cells[2] == 0) {
+                    cells[2].innerText = computer.sign;
+                    pattern[2] = computer.id;
+                    return;
+                }
+                else {
+                    cells[6].innerText = computer.sign;
+                    pattern[6] = computer.id;
+                    return;
+                }
+            }
+            else {
             cells[7].innerText = computer.sign;
             pattern[7] = computer.id;
             return;
+            }
         }
         if(pattern[4] == pattern[7] & pattern[4] == player.id) {
+            if(pattern[1] == computer.id) {
+                if(cells[2] == 0) {
+                    cells[2].innerText = computer.sign;
+                    pattern[2] = computer.id;
+                    return;
+                }
+                else if(pattern[2] == 0) {
+                    cells[2].innerText = computer.sign;
+                    pattern[2] = computer.id;
+                    return;
+                }
+                else {
+                    cells[6].innerText = computer.sign;
+                    pattern[6] = computer.id;
+                    return;
+                }
+            }
+            
+            else {
             cells[1].innerText = computer.sign;
             pattern[1] = computer.id;
             return;
+            }
         }
         if(pattern[1] == pattern[7] & pattern[1] == player.id) {
             if(pattern[4] == computer.id) {
@@ -479,12 +695,10 @@ function play() {
             pattern[6] = computer.id;
             return;
         }
-
-        // le kell kezelni a necces átlókat
     }
 
     function comp_fourth() {
-
+        comp_third();
     }
 
 
